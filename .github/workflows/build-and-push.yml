@@ -8,8 +8,8 @@ on:
         value: ${{ jobs.build-and-push.outputs.image_tag }}
 
 env:
-  BACKEND_IMAGE: trainwithshubham/devboard-backend
-  FRONTEND_IMAGE: trainwithshubham/devboard-frontend
+  BACKEND_IMAGE: avinashpawar123/devboard-backend
+  FRONTEND_IMAGE: avinashpawar123/devboard-frontend
 
 jobs:
   build-and-push:
