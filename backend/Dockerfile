@@ -8,8 +8,7 @@ RUN go mod download
 COPY . .
 RUN CGO_ENABLED=0 go build -o devboard-backend .
 
-FROM dhi.io/golang:1-alpine
-
+FROM golang:1-alpine
 WORKDIR /app
 
 COPY --from=builder /app/devboard-backend ./devboard-backend
